@@ -3,13 +3,11 @@ import {WelcomeStyles} from "../../Styles/WelcomeStyles";
 //import MyButton from "../../Elements/MyButton";
 
 const Pumps = () => {
-
     return (
         <View style={WelcomeStyles.welcomeScreen}>
-            <Text style={WelcomeStyles.welcomeText}>STATS</Text>
+            <Text style={WelcomeStyles.welcomeText}>PUMPS</Text>
         </View>
     );
-
 }
 
 export default Pumps;
