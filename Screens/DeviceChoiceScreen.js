@@ -2,12 +2,12 @@ import {TextInput, Text, View} from "react-native";
 import MyButton from "../Elements/MyButton";
 import {WelcomeStyles} from "../Styles/WelcomeStyles";
 import {DeviceChoiceStyles} from "../Styles/DeviceChoiceStyles";
-
+import {ScreenStyles} from "../Styles/ScreenStyles";
 
 const DeviceChoiceScreen = ({navigation}) => {
     return(
         <View style={WelcomeStyles.welcomeScreen}>
-            <Text style={WelcomeStyles.welcomeText}>Proszę o wprowadzenie ID systemu:</Text>
+            <Text style={ScreenStyles.mainText}>Proszę o wprowadzenie ID systemu:</Text>
             <TextInput
                 style={DeviceChoiceStyles.textInput}
                 placeholder='ID:'

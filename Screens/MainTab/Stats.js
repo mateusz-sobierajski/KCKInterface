@@ -3,13 +3,9 @@ import {WelcomeStyles} from "../../Styles/WelcomeStyles";
 //import MyButton from "../../Elements/MyButton";
 
 import {
-    LineChart,
-    BarChart,
-    PieChart,
-    ProgressChart,
-    ContributionGraph,
-    StackedBarChart
+    LineChart
 } from "react-native-chart-kit";
+import {ScreenStyles} from "../../Styles/ScreenStyles";
 
 let datasetTemp = {
     datasets: [
@@ -60,14 +56,13 @@ const Stats = () => {
 
     return (
         <View style={WelcomeStyles.welcomeScreen}>
-            <Text style={WelcomeStyles.welcomeText}>Temperatura</Text>
+            <Text style={ScreenStyles.mainText}>Temperatura:</Text>
             <LineChart
                 data = {datasetTemp}
-                width={Dimensions.get("window").width} // from react-native
+                width={Dimensions.get("window").width*0.9} // from react-native
                 height={100}
-                yAxisLabel="$"
-                yAxisSuffix="k"
-                yAxisInterval={1} // optional, defaults to 1
+                yAxisSuffix=" C"
+                yAxisInterval={.1} // optional, defaults to 1
                 chartConfig={{
                     backgroundColor: "#e26a00",
                     backgroundGradientFrom: "#fb8c00",
@@ -91,14 +86,13 @@ const Stats = () => {
                 }}
             />
 
-            <Text style={WelcomeStyles.welcomeText}>Stężenie CO2</Text>
+            <Text style={ScreenStyles.mainText}>Stężenie CO2:</Text>
             <LineChart
                 data = {datasetCO2}
-                width={Dimensions.get("window").width} // from react-native
+                width={Dimensions.get("window").width*0.9} // from react-native
                 height={100}
-                yAxisLabel="$"
-                yAxisSuffix="k"
-                yAxisInterval={1} // optional, defaults to 1
+                yAxisSuffix="ppm"
+                yAxisInterval={.1} // optional, defaults to 1
                 chartConfig={{
                     backgroundColor: "#e26a00",
                     backgroundGradientFrom: "#fb8c00",
@@ -122,14 +116,13 @@ const Stats = () => {
                 }}
             />
 
-            <Text style={WelcomeStyles.welcomeText}>Przepływ wody</Text>
+            <Text style={ScreenStyles.mainText}>Przepływ wody:</Text>
             <LineChart
                 data = {datasetWaterFlow}
-                width={Dimensions.get("window").width} // from react-native
+                width={Dimensions.get("window").width*0.9} // from react-native
                 height={100}
-                yAxisLabel="$"
-                yAxisSuffix="k"
-                yAxisInterval={1} // optional, defaults to 1
+                yAxisSuffix="L/min"
+                yAxisInterval={.1} // optional, defaults to 1
                 chartConfig={{
                     backgroundColor: "#e26a00",
                     backgroundGradientFrom: "#fb8c00",

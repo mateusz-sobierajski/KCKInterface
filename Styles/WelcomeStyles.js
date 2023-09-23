@@ -46,9 +46,5 @@ export const WelcomeStyles = StyleSheet.create({
         height: '50%',
         padding: 10,
         borderRadius: 5,
-    },
-    welcomeSlider:{
-        width: 200,
-        height: 60,
     }
 })
