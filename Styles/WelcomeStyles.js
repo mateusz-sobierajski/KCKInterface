@@ -7,7 +7,7 @@ export const WelcomeStyles = StyleSheet.create({
         paddingLeft: 30
     },
     welcomeScreen:{
-        backgroundColor: 'grey',
+        backgroundColor: '#808080',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',

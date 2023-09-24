@@ -1,28 +1,28 @@
 import {Text, View} from "react-native";
 import {WelcomeStyles} from "../../Styles/WelcomeStyles";
-import Slider from "@react-native-community/slider";
 import {ScreenStyles} from "../../Styles/ScreenStyles";
+import CustomSlider from "../../Elements/CustomSlider";
 //import MyButton from "../../Elements/MyButton";
 
 const Pumps = () => {
     return (
         <View style={WelcomeStyles.welcomeScreen}>
             <Text style={ScreenStyles.mainText}>Pompa 1:</Text>
-            <Slider
-                style={ScreenStyles.Slider}
+            <CustomSlider
                 minimumValue={0}
                 maximumValue={100}
-                minimumTrackTintColor="#FFFFFF"
+                minimumTrackTintColor="#ffffff"
                 maximumTrackTintColor="#000000"
+                thumbTintColor={"#ffffff"}
             />
 
             <Text style={ScreenStyles.mainText}>Pompa 2:</Text>
-            <Slider
-                style={ScreenStyles.Slider}
+            <CustomSlider
                 minimumValue={0}
                 maximumValue={100}
-                minimumTrackTintColor="#FFFFFF"
+                minimumTrackTintColor="#333333"
                 maximumTrackTintColor="#000000"
+                thumbTintColor={"#333333"}
             />
         </View>
     );
