@@ -9,7 +9,6 @@ import mainTab from "./Screens/MainTab/MainTab";
 
 import helplogin from "./Screens/MainTab/HelpLogin";
 import HelpID from "./Screens/MainTab/HelpID";
-import helpFun from "./Screens/MainTab/HelpFun";
 
 import {Text, TouchableOpacity} from "react-native";
 
@@ -19,7 +18,6 @@ const MainTab = mainTab;
 
 const Help1 = helplogin;
 const Help2 = HelpID;
-const Help3 = helpFun;
 
 const Stack = createStackNavigator();
 
@@ -74,10 +72,6 @@ export default function App() {
             <Stack.Screen
                 name="Help ID"
                 component={Help2}
-            />
-            <Stack.Screen
-                name="Help Funkcjonalności"
-                component={Help3}
             />
         </Stack.Navigator>
       </NavigationContainer>

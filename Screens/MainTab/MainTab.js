@@ -8,7 +8,10 @@ import Pumps from "./Pumps";
 import {Text, TouchableOpacity} from "react-native";
 
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import HelpFun from "./HelpFun";
+
+import HelpStat from "./Help/HelpStat";
+import HelpLight from "./Help/HelpLight";
+import HelpPump from "./Help/HelpPump";
 
 const Stats = stats;
 
@@ -23,15 +26,15 @@ function StatStackScreen({navigation}) {
             options={{
                 headerRight: () => (
                     <TouchableOpacity onPress={() =>
-                        navigation.navigate('Pomoc Funkcjonalności')}>
+                        navigation.navigate('Pomoc Statystyki')}>
                         <Text style={{ marginRight: "5%" }}>Pomoc</Text>
                     </TouchableOpacity>
                 ),
             }}
             />
             <StatStack.Screen
-                name="Pomoc Funkcjonalności"
-                component={HelpFun}
+                name="Pomoc Statystyki"
+                component={HelpStat}
             />
         </StatStack.Navigator>
     );
@@ -44,15 +47,15 @@ function LightStackScreen({navigation}) {
                               options={{
                                   headerRight: () => (
                                       <TouchableOpacity onPress={() =>
-                                          navigation.navigate('Pomoc Funkcjonalności')}>
+                                          navigation.navigate('Pomoc Oświetlenie')}>
                                           <Text style={{ marginRight: "5%" }}>Pomoc</Text>
                                       </TouchableOpacity>
                                   ),
                               }}
             />
             <PumpStack.Screen
-                name="Pomoc Funkcjonalności"
-                component={HelpFun}
+                name="Pomoc Oświetlenie"
+                component={HelpLight}
             />
         </LightStack.Navigator>
     );
@@ -65,15 +68,15 @@ function PumpStackScreen({navigation}) {
                                options={{
                                    headerRight: () => (
                                        <TouchableOpacity onPress={() =>
-                                           navigation.navigate('Pomoc Funkcjonalności')}>
+                                           navigation.navigate('Pomoc Pompy')}>
                                            <Text style={{ marginRight: "5%" }}>Pomoc</Text>
                                        </TouchableOpacity>
                                    ),
                                }}
             />
             <PumpStack.Screen
-                name="Pomoc Funkcjonalności"
-                component={HelpFun}
+                name="Pomoc Pompy"
+                component={HelpPump}
             />
         </PumpStack.Navigator>
     );
