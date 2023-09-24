@@ -58,6 +58,7 @@ export default function App() {
                 component={MainTab}
                 options={({ navigation }) => ({
                     headerTitle: 'Funkcjonalności',
+                    headerShown: false,
                     headerRight: () => (
                         <TouchableOpacity onPress={() =>
                             navigation.navigate('Help Funkcjonalności')}>
