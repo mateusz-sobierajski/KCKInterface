@@ -34,7 +34,9 @@ const Pumps = () => {
 
         try{
             console.log("Sending data to pump");
-            const response = await fetch("http://192.168.0.172:5000/pumps", {
+            //const response = await fetch("http://192.168.0.172:5000/pumps", {
+            const response = await fetch("http://192.168.0.200:5000/pumps", { //for testing rpi4 connection
+            //const response = await fetch("http://192.168.0.200:5000/datasets", { //for testing datasets connection
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"

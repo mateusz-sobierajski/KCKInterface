@@ -15,7 +15,8 @@ const DeviceChoiceScreen = ({navigation}) => {
 
         try{
             console.log("Sending data");
-            const response = await fetch("http://192.168.0.172:5000/login", {
+            //const response = await fetch("http://192.168.0.172:5000/login", {
+            const response = await fetch("http://192.168.0.200:5000/login", { //for testing rpi4 connection
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"
