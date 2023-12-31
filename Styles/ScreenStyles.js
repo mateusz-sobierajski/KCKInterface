@@ -1,6 +1,12 @@
 import {Dimensions, StyleSheet} from "react-native";
 
 export const ScreenStyles = StyleSheet.create({
+    headerText: {
+        position: 'relative',
+        color: 'white',
+        fontSize: 32,
+        fontWeight: 'bold',
+    },
     mainText: {
         position: 'relative',
         color: 'white',

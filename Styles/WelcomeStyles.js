@@ -12,6 +12,11 @@ export const WelcomeStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    ScrollViewScreen:{
+        backgroundColor: '#808080',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     helloButton: {
         position: 'relative',
         flexDirection: 'row',
