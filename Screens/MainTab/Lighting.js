@@ -33,40 +33,40 @@ const Lighting = () => {
 
         let lightValue;
         switch (lightID){
-            case Blue_T_L:
+            case 'Blue_T_L':
                 lightValue = Blue_T_L;
                 break;
-            case Red_T_L:
+            case 'Red_T_L':
                 lightValue = Red_T_L;
                 break;
-            case IR_T_L:
+            case 'IR_T_L':
                 lightValue = IR_T_L;
                 break;
-            case Blue_T_R:
+            case 'Blue_T_R':
                 lightValue = Blue_T_R;
                 break;
-            case Red_T_R:
+            case 'Red_T_R':
                 lightValue = Red_T_R;
                 break;
-            case IR_T_R:
+            case 'IR_T_R':
                 lightValue = IR_T_R;
                 break;
-            case Blue_B_L:
+            case 'Blue_B_L':
                 lightValue = Blue_B_L;
                 break;
-            case Red_B_L:
+            case 'Red_B_L':
                 lightValue = Red_B_L;
                 break;
-            case IR_B_L:
+            case 'IR_B_L':
                 lightValue = IR_B_L;
                 break;
-            case Blue_B_R:
+            case 'Blue_B_R':
                 lightValue = Blue_B_R;
                 break;
-            case Red_B_R:
+            case 'Red_B_R':
                 lightValue = Red_B_R;
                 break;
-            case IR_B_R:
+            case 'IR_B_R':
                 lightValue = IR_B_R;
                 break;
             default:
@@ -123,7 +123,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#ff0000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#ff0000"}
-                onSlidingComplete={() => submitLightValue(Red_T_L)}
+                onSlidingComplete={() => submitLightValue('Red_T_L')}
             />
 
             <Text style={ScreenStyles.mainText}>Niebieski 450nm:</Text>
@@ -135,7 +135,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#0046ff"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#0046ff"}
-                onSlidingComplete={() => submitLightValue(Blue_T_L)}
+                onSlidingComplete={() => submitLightValue('Blue_T_L')}
             />
 
             <Text style={ScreenStyles.mainText}>Podczerwień 730nm:</Text>
@@ -147,7 +147,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#c80000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#c80000"}
-                onSlidingComplete={() => submitLightValue(IR_T_L)}
+                onSlidingComplete={() => submitLightValue('IR_T_L')}
             />
 
 
@@ -162,7 +162,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#ff0000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#ff0000"}
-                onSlidingComplete={() => submitLightValue(Red_T_R)}
+                onSlidingComplete={() => submitLightValue('Red_T_R')}
             />
 
             <Text style={ScreenStyles.mainText}>Niebieski 450nm:</Text>
@@ -174,7 +174,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#0046ff"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#0046ff"}
-                onSlidingComplete={() => submitLightValue(Blue_T_R)}
+                onSlidingComplete={() => submitLightValue('Blue_T_R')}
             />
 
             <Text style={ScreenStyles.mainText}>Podczerwień 730nm:</Text>
@@ -186,7 +186,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#c80000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#c80000"}
-                onSlidingComplete={() => submitLightValue(IR_T_R)}
+                onSlidingComplete={() => submitLightValue('IR_T_R')}
             />
 
             <Text style={ScreenStyles.headerText}>Roślina Lewa Dolna:</Text>
@@ -200,7 +200,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#ff0000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#ff0000"}
-                onSlidingComplete={() => submitLightValue(Red_B_L)}
+                onSlidingComplete={() => submitLightValue('Red_B_L')}
             />
 
             <Text style={ScreenStyles.mainText}>Niebieski 450nm:</Text>
@@ -212,7 +212,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#0046ff"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#0046ff"}
-                onSlidingComplete={() => submitLightValue(Blue_B_L)}
+                onSlidingComplete={() => submitLightValue('Blue_B_L')}
             />
 
             <Text style={ScreenStyles.mainText}>Podczerwień 730nm:</Text>
@@ -224,7 +224,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#c80000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#c80000"}
-                onSlidingComplete={() => submitLightValue(IR_B_L)}
+                onSlidingComplete={() => submitLightValue('IR_B_L')}
             />
 
             <Text style={ScreenStyles.headerText}>Roślina Prawa Dolna:</Text>
@@ -238,7 +238,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#ff0000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#ff0000"}
-                onSlidingComplete={() => submitLightValue(Red_B_R)}
+                onSlidingComplete={() => submitLightValue('Red_B_R')}
             />
 
             <Text style={ScreenStyles.mainText}>Niebieski 450nm:</Text>
@@ -250,7 +250,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#0046ff"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#0046ff"}
-                onSlidingComplete={() => submitLightValue(Blue_B_R)}
+                onSlidingComplete={() => submitLightValue('Blue_B_R')}
             />
 
             <Text style={ScreenStyles.mainText}>Podczerwień 730nm:</Text>
@@ -262,7 +262,7 @@ const Lighting = () => {
                 minimumTrackTintColor="#c80000"
                 maximumTrackTintColor="#000000"
                 thumbTintColor={"#c80000"}
-                onSlidingComplete={() => submitLightValue(IR_B_R)}
+                onSlidingComplete={() => submitLightValue('IR_B_R')}
             />
         </ScrollView>
     );
